@@ -1,7 +1,7 @@
-package com.marsya.idn.alarmapp.Adapter
+package com.marsya.idn.myalarmapps.Adapter
 
 import androidx.recyclerview.widget.DiffUtil
-import com.marsya.idn.alarmapp.Room.Alarm
+import com.marsya.idn.myalarmapps.Room.Alarm
 
 class AlarmDiffutil (private val oldList: List<Alarm>, private val newList: List<Alarm>) : DiffUtil.Callback(){
     override fun getOldListSize(): Int {

@@ -8,8 +8,8 @@ import android.widget.Toast
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.marsya.idn.alarmapp.Adapter.AlarmAdapter
-import com.marsya.idn.alarmapp.Room.AlarmDB
+import com.marsya.idn.myalarmapps.Adapter.AlarmAdapter
+import com.marsya.idn.myalarmapps.Room.AlarmDB
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -44,12 +44,12 @@ class MainActivity : AppCompatActivity() {
 
     private fun initRecyclerView() {
         alarmAdapter = AlarmAdapter()
-        .apply{
-            layoutManager = LinearLayoutManager(applicationContext)
-            adapter = alarmAdapter
+            rv_reminder_alarm.apply {
+                layoutManager = LinearLayoutManager(applicationContext)
+                adapter = alarmAdapter
+                swipeToDelete(this)
+            }
 
-            swipeToDelete(this)
-        }
     }
 
     private fun swipeToDelete(recyclerView: RecyclerView?) {
@@ -85,7 +85,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initAlarmType() {
         view_set_one_time_alarm.setOnClickListener {
-            startActivity(Intent(this, OneTiimeAlarmActivity::class.java))
+            startActivity(Intent(this, OneTimeAlarmActivity::class.java))
         }
 
         view_set_repeating_alarm.setOnClickListener {

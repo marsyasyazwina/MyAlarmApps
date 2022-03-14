@@ -1,4 +1,4 @@
-package com.marsya.idn.alarmapp.Fragment
+package com.marsya.idn.myalarmapps.Fragment
 
 import android.app.Dialog
 import android.app.TimePickerDialog

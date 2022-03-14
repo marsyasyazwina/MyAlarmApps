@@ -3,11 +3,11 @@ package com.marsya.idn.myalarmapps
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import com.marsya.idn.alarmapp.Fragment.DatePickerFragment
-import com.marsya.idn.alarmapp.Fragment.TimePickerFragment
-import com.marsya.idn.alarmapp.Room.Alarm
-import com.marsya.idn.alarmapp.Room.AlarmDB
-import com.marsya.idn.alarmapp.databinding.ActivityMainBinding
+import com.marsya.idn.myalarmapps.Fragment.DatePickerFragment
+import com.marsya.idn.myalarmapps.Fragment.TimePickerFragment
+import com.marsya.idn.myalarmapps.Room.Alarm
+import com.marsya.idn.myalarmapps.Room.AlarmDB
+import com.marsya.idn.myalarmapps.databinding.ActivityMainBinding
 import kotlinx.android.synthetic.main.activity_one_time_alarm.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -15,7 +15,7 @@ import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat
 import java.util.*
 
-class OneTiimeAlarmActivity : AppCompatActivity(),
+class OneTimeAlarmActivity : AppCompatActivity(),
     View.OnClickListener, DatePickerFragment.DialogDateListener, TimePickerFragment.DialogTimeListener {
 
     private var binding: ActivityMainBinding? = null
@@ -52,7 +52,7 @@ class OneTiimeAlarmActivity : AppCompatActivity(),
                 val timePickerFragmentOneTime = TimePickerFragment()
                 timePickerFragmentOneTime.show(supportFragmentManager, TIME_PICKER_ONCE_TAG)
             }
-            R.id.btn_set_time_one_time -> {
+            R.id.btn_add_set_one_time_alarm -> {
                 val onceDate = tv_once_date.text.toString()
                 val onceTime = tv_once_time.text.toString()
                 val onceMessage = et_note_one_time.text.toString()

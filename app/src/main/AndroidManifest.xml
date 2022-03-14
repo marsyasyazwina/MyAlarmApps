@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAlarmApps">
+        <activity android:name=".OneTimeAlarmActivity" />
+        <activity android:name=".RepeatingAlarmActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

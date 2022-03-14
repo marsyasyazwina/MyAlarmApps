@@ -1,4 +1,4 @@
-package com.marsya.idn.alarmapp.Adapter
+package com.marsya.idn.myalarmapps.Adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -8,8 +8,9 @@ import android.widget.ImageView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.marsya.idn.alarmapp.R
 import com.marsya.idn.myalarmapps.Room.Alarm
+//import com.marsya.idn.myalarmapps.Room.Alarm
+import com.marsya.idn.myalarmapps.R
 import kotlinx.android.synthetic.main.activity_row_reminder.view.*
 
 class AlarmAdapter() : RecyclerView.Adapter<AlarmAdapter.AlarmViewHolder>(){

@@ -3,10 +3,10 @@ package com.marsya.idn.myalarmapps
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import com.marsya.idn.alarmapp.Fragment.TimePickerFragment
-import com.marsya.idn.alarmapp.Room.Alarm
-import com.marsya.idn.alarmapp.Room.AlarmDB
-import com.marsya.idn.alarmapp.databinding.ActivityMainBinding
+import com.marsya.idn.myalarmapps.Fragment.TimePickerFragment
+import com.marsya.idn.myalarmapps.Room.Alarm
+import com.marsya.idn.myalarmapps.Room.AlarmDB
+import com.marsya.idn.myalarmapps.databinding.ActivityMainBinding
 import kotlinx.android.synthetic.main.activity_repeating_alarm.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

@@ -1,4 +1,4 @@
-package com.marsya.idn.alarmapp.Room
+package com.marsya.idn.myalarmapps.Room
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
